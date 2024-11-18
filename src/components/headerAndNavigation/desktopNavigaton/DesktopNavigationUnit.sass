@@ -1,0 +1,28 @@
+@use "../../../styles/colors"
+
+.DesktopNavigationUnit
+  height: 100%
+  display: flex
+  align-items: center
+  margin-right: 18px
+
+  a
+    font-size: 14px
+    line-height: 18px
+    text-decoration: none
+    color: colors.$grey
+
+  &.active
+    position: relative
+
+    a
+      color: colors.$black
+
+    &::after
+      content: ''
+      position: absolute
+      bottom: -1px
+      left: 0
+      right: 0
+      height: 2px
+      background-color: colors.$black

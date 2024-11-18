@@ -1,0 +1,13 @@
+@use "../../../styles/variables"
+@use "../../../styles/colors"
+
+.DesktopNavigationList
+  width: 100%
+  max-width: variables.$header-content-max-width
+  height: 45px
+  border-bottom: colors.$divider-grey 1px solid
+  margin: 0 18px
+  display: flex
+
+  @media (max-width: 1024px)
+    display: none

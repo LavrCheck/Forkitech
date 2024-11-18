@@ -1,0 +1,18 @@
+@use "../../../styles/colors"
+@use "../../../styles/variables"
+
+.MobileMenuUnit
+  height: 30px
+  margin: 8px 0
+  border-bottom: 1px solid colors.$divider-mobile-grey
+
+  a
+    color: colors.$mobile-grey
+    text-decoration: none
+    font-weight: 700
+    font-size: 16px
+    line-height: 22px
+
+  &.active
+    a
+      color: colors.$black

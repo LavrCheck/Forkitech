@@ -1,0 +1,56 @@
+@use "../../styles/colors"
+@use "../../styles/variables"
+
+.Header
+  background-color: colors.$black
+  height: 40px
+  display: flex
+  justify-content: center
+
+  .content
+    width: 100%
+    max-width: variables.$header-content-max-width
+    margin: 0 18px
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    a
+      height: 22px
+
+    .right-information-container
+      display: flex
+
+      .location-container
+        display: flex
+        align-items: center
+
+        span
+          margin-left: 10px
+          margin-right: 38px
+          font-size: 14px
+          color: colors.$grey
+
+      .active-icons-container
+        display: flex
+        align-items: center
+
+        .close-icon, .hamburger-icon
+          cursor: pointer
+          transition: filter 0.2s ease-in-out
+
+          &:active
+            filter: brightness(0.6)
+
+        .hamburger-icon
+          display: none
+          margin-left: 18px
+
+    @media (max-width: 1024px)
+      .right-information-container
+        .location-container
+          display: none
+
+        .active-icons-container
+          .hamburger-icon
+            display: unset
