@@ -10,12 +10,12 @@ function App() {
                 <HeaderAndNavigation/>
                 <Routes>
                     <Route path="/" element={<Navigate to="advantages" />}/>
-                    <Route path="advantages" component={<></>} />
-                    <Route path="tariffs" component={<></>} />
-                    <Route path="sales" component={<></>} />
-                    <Route path="promotional-tariff" component={<></>} />
-                    <Route path="eSIM" component={<></>} />
-                    <Route path="new-subscriber" component={<></>} />
+                    <Route path="advantages" element={<></>} />
+                    <Route path="tariffs" element={<></>} />
+                    <Route path="sales" element={<></>} />
+                    <Route path="promotional-tariff" element={<></>} />
+                    <Route path="eSIM" element={<></>} />
+                    <Route path="new-subscriber" element={<></>} />
                 </Routes>
             </BrowserRouter>
         </>
