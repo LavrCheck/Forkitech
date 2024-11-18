@@ -30,7 +30,8 @@ export const HeaderAndNavigation = () => {
     }, [])
 
     const {pathname} = useLocation()
-    const currentPath = pathname.slice(1)
+    const path = pathname.split('/')
+    const currentPath = path[path.length - 1]
 
     return <>
         <div className={'HeaderAndNavigation'}>
