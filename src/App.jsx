@@ -6,7 +6,7 @@ function App() {
 
     return (
         <>
-            <BrowserRouter>
+            <BrowserRouter basename="/Forkitech">
                 <HeaderAndNavigation/>
                 <Routes>
                     <Route path="/" element={<Navigate to="advantages" />}/>
