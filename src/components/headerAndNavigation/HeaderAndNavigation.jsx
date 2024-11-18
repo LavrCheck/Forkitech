@@ -6,12 +6,12 @@ import {MobileMenuList} from "./mobileMenu/MobileMenuList.jsx";
 import {useLocation} from "react-router-dom";
 
 export const navigationUnits = [
-    {name: 'Преимущества Tele2', link: 'advantages'},
-    {name: 'Тарифы', link: 'tariffs'},
-    {name: 'Акции и спецпредложения', link: 'sales'},
-    {name: 'Промтариф Tele2', link: 'promotional-tariff'},
-    {name: 'Технология eSIM', link: 'eSIM'},
-    {name: 'Подключение нового абонента', link: 'new-subscriber'},
+    {name: 'Преимущества Tele2', link: '/advantages'},
+    {name: 'Тарифы', link: '/tariffs'},
+    {name: 'Акции и спецпредложения', link: '/sales'},
+    {name: 'Промтариф Tele2', link: '/promotional-tariff'},
+    {name: 'Технология eSIM', link: '/eSIM'},
+    {name: 'Подключение нового абонента', link: '/new-subscriber'},
 ]
 
 export const HeaderAndNavigation = () => {

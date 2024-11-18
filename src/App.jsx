@@ -9,7 +9,7 @@ function App() {
             <BrowserRouter basename="/Forkitech">
                 <HeaderAndNavigation/>
                 <Routes>
-                    <Route path="/" element={<Navigate to="advantages" />}/>
+                    <Route path="/" element={<Navigate to="/advantages" />}/>
                     <Route path="advantages" element={<></>} />
                     <Route path="tariffs" element={<></>} />
                     <Route path="sales" element={<></>} />
