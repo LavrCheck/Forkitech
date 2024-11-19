@@ -1,11 +1,10 @@
 import './Header.sass'
 import logo from '../../assets/logo.svg'
-import location from '../../assets/location.svg'
-import notificationBell from '../../assets/notificationBell.svg'
 import {Link} from "react-router-dom";
 import hamburger from '../../assets/hamburger.svg'
 import close from '../../assets/close.svg'
 import {AnimatedBell} from "../AnimatedBell.jsx";
+import {LocationContainer} from "../LocationContainer.jsx";
 
 export const Header = ({onMenuClick, isMenuOpen}) => {
     return <>
@@ -15,10 +14,7 @@ export const Header = ({onMenuClick, isMenuOpen}) => {
                     <img src={logo} alt="logo"/>
                 </Link>
                 <div className={'right-information-container'}>
-                    <div className={'location-container'}>
-                        <img src={location} alt="location"/>
-                        <span>Москва и область</span>
-                    </div>
+                    <LocationContainer isDesktop={true}/>
                     <div className={'active-icons-container'}>
                         {isMenuOpen ?
                             <img

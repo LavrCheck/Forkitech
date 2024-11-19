@@ -1,0 +1,14 @@
+@use "../styles/colors"
+
+.LocationContainer
+  display: flex
+  align-items: center
+
+  span
+    margin-right: 38px
+    font-size: 14px
+    color: colors.$grey
+
+  &.desktop
+    @media (width < 1024px)
+      display: none

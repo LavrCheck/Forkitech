@@ -21,16 +21,6 @@
     .right-information-container
       display: flex
 
-      .location-container
-        display: flex
-        align-items: center
-
-        span
-          margin-left: 10px
-          margin-right: 38px
-          font-size: 14px
-          color: colors.$grey
-
       .active-icons-container
         display: flex
         align-items: center
@@ -46,11 +36,7 @@
           display: none
           margin-left: 18px
 
-    @media (max-width: 1024px)
-      .right-information-container
-        .location-container
-          display: none
-
-        .active-icons-container
-          .hamburger-icon
-            display: unset
+      @media (max-width: 1024px)
+          .active-icons-container
+            .hamburger-icon
+              display: unset

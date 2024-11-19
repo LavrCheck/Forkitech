@@ -1,6 +1,7 @@
 import './MobileMenuList.sass'
 import {navigationUnits} from "../HeaderAndNavigation.jsx";
 import {MobileMenuUnit} from "./MobileMenuUnit.jsx";
+import {LocationContainer} from "../../LocationContainer.jsx";
 
 export const MobileMenuList = ({currentPath, onMenuUnitClick}) => {
     return <>
@@ -14,6 +15,9 @@ export const MobileMenuList = ({currentPath, onMenuUnitClick}) => {
                     onMenuUnitClick={onMenuUnitClick}
                 />
             ))}
+            <div className={'footer'}>
+                <LocationContainer/>
+            </div>
         </div>
     </>
 }
